@@ -44,7 +44,7 @@ const Bio = () => {
           {author?.description ? (`, ` + author?.description || null) : `. `}
           {` `}
           {author?.twitter && (
-            <a href={`https://twitter.com/${author?.twitter || ``}`}>
+            <a href={`https://twitter.com/${author?.twitter || ``}`} target="_blank" rel="noreferrer">
               You should follow him on Twitter
             </a>
           )}

@@ -1,21 +1,18 @@
 {
-  "name": "gatsby-starter-wordpress-blog",
+  "name": "gatsby-wordpress-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A blog powered by Gatsby and Markdown - using WordPress as CMS",
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com> and Tyler Barnes <tylerdbarnes@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://devsmit.in/",
   "keywords": [
-    "gatsby"
+    "gatsby", "gatsby + WordPress"
   ],
   "license": "0BSD",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/devsmitin/headless-wp.git"
   },
   "scripts": {
     "build": "gatsby build",
