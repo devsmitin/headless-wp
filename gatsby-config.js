@@ -58,13 +58,13 @@ module.exports = {
       // See https://www.gatsbyjs.com/plugins/gatsby-plugin-manifest/?=gatsby-plugin-manifest
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby WordPress Blog`,
-        short_name: `GatsbyJS & WP`,
+        name: `Smit's WordPress Blogs`,
+        short_name: `Smit' Blogs`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/whale.png`,
+        icon: `content/assets/icon.png`,
       },
     },
 
