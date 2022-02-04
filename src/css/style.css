@@ -333,3 +333,39 @@ a:focus {
     list-style-position: inside;
   }
 }
+
+body {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🐋</text></svg>")
+      16 0,
+    auto;
+}
+a {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🐳</text></svg>")
+      16 0,
+    auto;
+}
+
+.post-link span {
+  color: #333;
+  font-weight: var(--fontWeight-extrabold);
+  letter-spacing: 0.5px;
+  background-image: linear-gradient(
+    transparent calc(75% - 5px),
+    rgba(0, 91, 153, 0.1) 5px
+  );
+  background-size: 0;
+  background-repeat: no-repeat;
+  display: inline;
+  transition: 0.5s ease;
+}
+.post-link:hover span {
+  color: inherit;
+  background-size: 100%;
+}
+.post-link span:before {
+  content: "🐋 ";
+  font-size: 1.5em;
+}
+.post-link:hover span:before {
+  content: "🐳 ";
+}
