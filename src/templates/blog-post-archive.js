@@ -31,7 +31,7 @@ const BlogIndex = ({
 
       <Bio />
 
-      <ol style={{ listStyle: `none` }}>
+      <ol style={{ listStyle: `none`, borderTop: `2px dashed #333` }}>
         {posts.map(post => {
           const title = post.title
 
@@ -43,14 +43,17 @@ const BlogIndex = ({
                 itemType="http://schema.org/Article"
               >
                 <header className="post-header">
-                  <h2>
-                    <Link to={post.uri} itemProp="url" className="post-link">
+                  <h2 className="post-title">
                       <span itemProp="headline">{parse(title)} →</span>
-                    </Link>
                   </h2>
-                  <small>{post.date}</small>
+                  <small class="post-date">{post.date}</small>
                 </header>
-                {/* <section itemProp="description">{parse(post.excerpt)}</section> */}
+                <section itemProp="description" className="small">
+                  {parse(post.excerpt)}
+                </section>
+                <Link to={post.uri} itemProp="url" className="post-link">
+                  <span>Read More...</span>
+                </Link>
               </article>
             </li>
           )

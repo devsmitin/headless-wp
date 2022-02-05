@@ -23,20 +23,18 @@ const Bio = () => {
     }
   `)
 
-  console.log("author", author)
-
   const avatarUrl = author?.avatar?.url
 
   return (
     <div className="bio">
       {avatarUrl && (
-        <span>
+        <div>
           <img
             alt={author?.firstName || ``}
             className="bio-avatar"
             src={avatarUrl}
           />
-        </span>
+        </div>
       )}
       {author?.firstName && (
         <p>

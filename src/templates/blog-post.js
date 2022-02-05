@@ -41,12 +41,15 @@ const BlogPostTemplate = ({ data: { previous, next, post } }) => {
               image={featuredImage.data}
               alt={featuredImage.alt}
               style={{ marginBottom: 50 }}
+              className="article-image"
             />
           )}
         </header>
 
         {!!post.content && (
-          <section itemProp="articleBody">{parse(post.content)}</section>
+          <section className="article-body" itemProp="articleBody">
+            {parse(post.content)}
+          </section>
         )}
 
         <hr />
