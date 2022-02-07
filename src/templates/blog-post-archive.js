@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import parse from "html-react-parser"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
@@ -16,7 +15,6 @@ const BlogIndex = ({
     return (
       <Layout isHomePage>
         <Seo title="All posts" />
-        <Bio />
         <p>
           No blog posts found. Add posts to your WordPress site and they'll
           appear here!
@@ -28,8 +26,6 @@ const BlogIndex = ({
   return (
     <Layout isHomePage>
       <Seo title="All posts" />
-
-      <Bio />
 
       <ol style={{ listStyle: `none`, borderTop: `2px dashed #333` }}>
         {posts.map(post => {
@@ -44,7 +40,7 @@ const BlogIndex = ({
               >
                 <header className="post-header">
                   <h2 className="post-title">
-                      <span itemProp="headline">{parse(title)} →</span>
+                    <span itemProp="headline">{parse(title)} →</span>
                   </h2>
                   <small class="post-date">{post.date}</small>
                 </header>

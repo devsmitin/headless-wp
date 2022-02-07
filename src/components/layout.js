@@ -33,9 +33,25 @@ const Layout = ({ isHomePage, children }) => {
       </header>
 
       <main>{children}</main>
-
+      <nav className="main-navigation">
+        <ul className="main-navigation-list">
+          <li className="main-navigation-list-item">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="main-navigation-list-item">
+            <Link to="/about">About</Link>
+          </li>
+        </ul>
+      </nav>
       <footer>
-        With <span role="img" aria-label="love">❤️</span> by{" "}
+        <a
+          href="https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Gatsby starter blog
+        </a>{" "}
+        updated by{" "}
         <a href="https://devsmit.in/" target="_blank" rel="noreferrer">
           Smit Modi
         </a>
