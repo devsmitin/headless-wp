@@ -92,13 +92,13 @@ a {
 }
 
 /* .article-body */
-.article-body {
+/* .article-body {
   transform: translateX(-5px);
   background-color: #fff;
   box-shadow: 10px 10px #454545;
   border: 2px solid #333;
   padding: 1.5rem;
-}
+} */
 .article-body ul,
 .article-body ol {
   padding: revert;
