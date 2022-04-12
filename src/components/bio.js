@@ -14,7 +14,6 @@ const Bio = () => {
       # if there was more than one user, this would need to be filtered
       author: wpUser {
         firstName
-        twitter: name
         description
         avatar {
           url
